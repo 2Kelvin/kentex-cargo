@@ -3,6 +3,8 @@ package com.example.kentexcargo.ui.screens
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.OutlinedCard
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -34,7 +36,11 @@ fun DashboardScreen(modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun ReusableRow(infoTitle: String, userInfo: String) {
+fun ReusableRow(
+    infoTitle: String,
+    userInfo: String,
+    modifier: Modifier = Modifier.size(480.dp)
+) {
     Text(
         text = infoTitle,
         fontWeight = FontWeight.Bold
