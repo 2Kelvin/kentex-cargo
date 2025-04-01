@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
@@ -97,7 +96,7 @@ fun CustomBottomAppbar(modifier: Modifier = Modifier) {
         IconButton(onClick = {}, modifier = Modifier.padding(end = 12.dp).weight(1f)) {
             Icon(
                 Icons.Default.Person,
-                contentDescription = "Profile Icon"
+                contentDescription = "Account Icon"
             )
         }
     }
