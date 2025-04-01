@@ -20,7 +20,7 @@ fun OrdersScreen(modifier: Modifier = Modifier) {
     }
 }
 
-/** One package list item card */
+/** One self-shipped package card */
 @Composable
 fun ReusablePackageItem(
     packageName: String,
@@ -30,6 +30,23 @@ fun ReusablePackageItem(
     deliveredInWHDate: String,
     shipTo: String,
     createdOnDate: String,
+    modifier: Modifier = Modifier
+) {
+    OutlinedCard {
+        Column {
+            //todo
+        }
+    }
+}
+
+/** One order request package item */
+@Composable
+fun ReusableOrderRequestItem(
+    orderNumber: Int,
+    date: String,
+    status: String,
+    totalCost: Double,
+    action: String,
     modifier: Modifier = Modifier
 ) {
     OutlinedCard {
